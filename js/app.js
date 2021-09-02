@@ -1,7 +1,7 @@
 document.getElementById('error-message').style.display = 'none';
 
 // spinner 
-const toggleSpinner = displayStyle => {
+const spinner = displayStyle => {
     document.getElementById('spinner').style.display = displayStyle;
 
 }
@@ -25,7 +25,7 @@ const searchBook = () => {
             .then(res => res.json())
             .then(data => displaySearchResult(data))
         // display spinner 
-        toggleSpinner('block');
+        spinner('block');
         document.getElementById('error-message').style.display = 'none';
         document.getElementById('book-numbers').textContent = '';
     }
@@ -44,7 +44,7 @@ const displaySearchResult = books => {
     document.getElementById('error-message').style.display = 'none';
     const bookList = books.docs;
     // slice array element 
-    const arraySliceList = bookList.slice(0, 30);
+    const arraySliceList = bookList.slice(0, 15);
 
     if (bookList.length === 0) {
         displayError();
@@ -69,6 +69,6 @@ const displaySearchResult = books => {
         });
     }
     // display spinner 
-    toggleSpinner('none');
+    spinner('none');
 }
 

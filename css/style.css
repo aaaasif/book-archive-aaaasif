@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    background-color: #9CC3D5FF;
+ }
+ .book-page-color{
+    background-color: rgb(61, 60, 60);
+ }
+ .page-banner{
+     margin-left:220px;
+     font-weight: 400;
+     font-size: 20px;
+ }
+.donate{
+    margin-right: 220px;
+     font-weight: 400;
+}
+ .donate-icon{
+     color: rgb(223, 98, 98);
+ }
+ .read{
+    background-color: #1d7db4;
+    color:white;
+    font-weight: 400;
+    font-size: 22px;
+
+ }
